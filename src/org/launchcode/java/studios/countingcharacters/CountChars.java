@@ -9,10 +9,10 @@ public class CountChars {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your string: ");
         String str = input.nextLine();
-        char[] charsInStr = str.toCharArray();
+        char[] charsInString = str.toCharArray();
         HashMap<Character, Integer> charCount = new HashMap<>();
 
-        for (char character : charsInStr) {
+        for (char character : charsInString) {
             if (charCount.containsKey(character)) {
                 charCount.put(character, charCount.get(character) + 1); //.get() method not in textbook, but returns value for given key
             } else {
